@@ -53,7 +53,7 @@ public class Rutina_COM /*extends Task<Integer>*/{
 		comunic.setComunicationListener(new OnComunicationListener() {
 			
 			@Override
-			public void onDataReceived(String rcv) {
+			public void onDataReceived(String rcv, int[] ndato) {
 				tarea += rcv;
 				if(rcv.endsWith("P")) {
 					procesar(tarea);
